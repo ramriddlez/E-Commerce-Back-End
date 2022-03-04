@@ -19,7 +19,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
   });
 
 // get one product
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
   try{
